@@ -7,6 +7,9 @@ public class Circulo_AEG extends FiguraGeometrica_AEG {
 	public Circulo_AEG(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if(radio < 0){
+			Math.abs(radio);
+		}
 	}
 
 	@Override
